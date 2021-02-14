@@ -1,10 +1,14 @@
+![View from the Pizā lighthouse](./images/museovirasto.871088232A502183E53A693C30CF078E.jpg "View from the Pizā lighthouse")
+
+*View from the Pizā lighthouse. Photo by Vilho Setälä, 1912, colorized using a model by [DeepAI](https://deepai.org). Licence: CC BY 4.0. [More info at finna.fi](https://finna.fi/Record/museovirasto.871088232A502183E53A693C30CF078E).*
+
 # Colorized Livonian Coast
 
 This repository contains a collection of automatically 'colorized' historical photographs
 of the [Livonian Coast](https://en.wikipedia.org/wiki/Livonian_Coast) (Līvõd Rānda).
 The original photos were taken in the villages of the Livonian Coast by Finnish
- photographer [Vilho Setälä](https://fi.wikipedia.org/wiki/Vilho_Set%C3%A4l%C3%A4) in 
-1912. They are included in the [Finno-Ugric Picture collection](https://www.museovirasto.fi/en/collection-and-information-services/the_picture_collections/collections/finno-ugric-picture-collection)
+photographer [Vilho Setälä](https://fi.wikipedia.org/wiki/Vilho_Set%C3%A4l%C3%A4) in 1912.
+They are included in the [Finno-Ugric Picture collection](https://www.museovirasto.fi/en/collection-and-information-services/the_picture_collections/collections/finno-ugric-picture-collection)
 of the [Finnish Heritage Agency's](https://www.museovirasto.fi/en/) and made available
 through the [Finna.fi service](https://finna.fi) ([query for this specific set](https://finna.fi/Search/Results?filter%5B%5D=%7Eformat_ext_str_mv%3A%220%2FImage%2F%22&filter%5B%5D=%7Etopic_facet%3A%22liivil%C3%A4iset%22&lookfor=Set%C3%A4l%C3%A4%2C+Vilho&type=Author)).
 
