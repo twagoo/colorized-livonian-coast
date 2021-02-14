@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Author: Twan Goosen <t.goosen@gmail.com>
-# Licence: https://creativecommons.org/licenses/by/4.0/
+# Licence: GNU GPLv3 <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
@@ -17,8 +17,8 @@ METADATA_TSV="${BASE_DIR}/metadata.tsv"
 IMAGE_DIR="images"
 
 main() {
-	#get_ids
-	#colorize_images
+	get_ids
+	colorize_images
 	create_metadata
 }
 
@@ -37,7 +37,7 @@ colorize_images() {
 create_metadata() {
 	echo "Collecting and writing metadata to ${METADATA_TSV}"
 
-	echo 'id\ttitle\tfilename\toriginal_image_url\tlanding_page' > "${METADATA_TSV}"
+	echo -e "id\ttitle\tfilename\toriginal_image_url\tlanding_page" > "${METADATA_TSV}"
 	while read ITEM_ID; do
 		echo "${ITEM_ID}"
 	

@@ -1,9 +1,15 @@
 #!/bin/bash
 
+# Uses <https://deepai.org/machine-learning-model/colorizer> to download a colorized
+# version of an image. Arguments: <input URL> <output filename>
+
+# Author: Twan Goosen <t.goosen@gmail.com>
+# Licence: GNU GPLv3 <https://www.gnu.org/licenses/gpl-3.0.txt>
+
 curl \
 	-s -o tmp.json \
     -F "image=${1}" \
-    -H 'api-key:16132985-db29-43b2-a923-cca36be36215' \
+    -H "api-key:${DEEPAI_KEY}" \
     https://api.deepai.org/api/colorizer
 
 URL="$(cat tmp.json|jq -r '.output_url')"
