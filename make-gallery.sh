@@ -11,5 +11,5 @@ BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 	docker build --tag twagoo/thumbsup .)
 
 ( cd "${BASE_DIR}" &&
-	docker run --rm -it -v $(pwd):/pwd --workdir /pwd  twagoo/thumbsup thumbsup --input images --output .
+	docker run --rm -it -v $(pwd):/pwd --workdir /pwd  twagoo/thumbsup thumbsup --config gallery-config.json --input images --output .
 )
