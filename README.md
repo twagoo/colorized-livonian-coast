@@ -28,8 +28,8 @@ of each of the photos retrieved from the finna.fi services.
 
 [**Browse the image gallery**](https://twagoo.github.io/colorized-livonian-coast/)
 
-More information about individual photos can be found via the
-[finna.fi result browser](https://finna.fi/Search/Results?filter%5B%5D=%7Eformat_ext_str_mv%3A%220%2FImage%2F%22&filter%5B%5D=%7Etopic_facet%3A%22liivil%C3%A4iset%22&lookfor=Set%C3%A4l%C3%A4%2C+Vilho&type=Author).
+The black-and-white originals and more information about individual photos can be found
+via the [finna.fi result browser](https://finna.fi/Search/Results?filter%5B%5D=%7Eformat_ext_str_mv%3A%220%2FImage%2F%22&filter%5B%5D=%7Etopic_facet%3A%22liivil%C3%A4iset%22&lookfor=Set%C3%A4l%C3%A4%2C+Vilho&type=Author).
 
 
 You can also [download this repository including all images as a .zip file](https://github.com/twagoo/colorized-livonian-coast/archive/main.zip).
