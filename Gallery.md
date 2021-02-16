@@ -1,6 +1,6 @@
 # Colorized Livonian Coast
 
-[Click here for more information](..)
+[Click here for more information](README.md)
 
 ----
 

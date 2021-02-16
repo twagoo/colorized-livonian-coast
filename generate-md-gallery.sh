@@ -32,7 +32,7 @@ create_gallery() {
 create_gallery_md_content() {
 	echo "# Colorized Livonian Coast"
 	echo ""
-	echo "[Click here for more information](..)"
+	echo "[Click here for more information](README.md)"
 	echo ""
 	while read ITEM_ID; do
 		RESULT_TEMP="${TMP_DIR}/result_${ITEM_ID}.json"
