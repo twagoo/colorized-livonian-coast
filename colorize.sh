@@ -12,7 +12,7 @@ curl \
     -H "api-key:${DEEPAI_KEY}" \
     https://api.deepai.org/api/colorizer
 
-URL="$(cat tmp.json|jq -r '.output_url')"
+URL="$(jq -r '.output_url' < tmp.json)"
 
 if [ "${URL}" = "null" ] || [ -z "${URL}" ]; then
 	echo "Error: ${URL}"
