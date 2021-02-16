@@ -26,7 +26,7 @@ The images can be found in the [images](./images) folder. A [metadata file](./me
 has links to the original, high quality black-and-white image as well as the title
 of each of the photos retrieved from the finna.fi services. 
 
-[**Browse the image gallery**](https://twagoo.github.io/colorized-livonian-coast/)
+[**Browse the image gallery**](./Gallery.md)
 
 The black-and-white originals and more information about individual photos can be found
 via the [finna.fi result browser](https://finna.fi/Search/Results?filter%5B%5D=%7Eformat_ext_str_mv%3A%220%2FImage%2F%22&filter%5B%5D=%7Etopic_facet%3A%22liivil%C3%A4iset%22&lookfor=Set%C3%A4l%C3%A4%2C+Vilho&type=Author).

@@ -12,7 +12,7 @@ TMP_DIR="${BASE_DIR}/tmp"
 mkdir -p "${TMP_DIR}"
 
 IDS_FILE="${BASE_DIR}/ids.txt"
-MD_GALLERY="${BASE_DIR}/gallery.md"
+MD_GALLERY="${BASE_DIR}/Gallery.md"
 IMAGE_DIR="images"
 
 main() {
