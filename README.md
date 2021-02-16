@@ -22,9 +22,9 @@ and give an impression of what the scenes *may* have looked like. **The goal
 explicitly was not an attempt to accurately reconstruct what these scenes looked
 like in reality**.
 
-The images can be found in the [images](./images) folder. A [metadata file](./metadata.tsv)
-has links to the original, high quality black-and-white image as well as the title
-of each of the photos retrieved from the finna.fi services. 
+The colorized image files can be found in the [images](./images) folder. 
+A [metadata file](./metadata.tsv) has links to the original, high quality black-and-white
+image as well as the title of each of the photos retrieved from the finna.fi services.
 
 [**Browse the image gallery**](./Gallery.md)
 

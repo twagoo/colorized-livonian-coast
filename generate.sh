@@ -52,7 +52,7 @@ create_metadata() {
 			
 		TITLE="$(jq -r '.records|.[]|.title' < "${RESULT_TEMP}")"
 		FILE_NAME="${IMAGE_DIR}/${ITEM_ID}.jpg"
-		IMAGE_URL="https://www.finna.fi/Cover/Show?id=${ITEM_ID}&index=0&size=large&source=Solr"
+		IMAGE_URL="https://finna.fi/Cover/Download?id=${ITEM_ID}&index=0&size=original&format=tif"
 		LANDING_PAGE="https://finna.fi/Record/${ITEM_ID}"
 		
 		echo -e "${ITEM_ID}\t${TITLE}\t${FILE_NAME}\t${IMAGE_URL}\t${LANDING_PAGE}" >> "${METADATA_TSV}"
