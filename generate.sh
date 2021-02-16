@@ -3,6 +3,8 @@
 # Author: Twan Goosen <t.goosen@gmail.com>
 # Licence: GNU GPLv3 <https://www.gnu.org/licenses/gpl-3.0.txt>
 
+set -e
+
 BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 FINNA_API='https://api.finna.fi/api/v1'
@@ -26,13 +28,12 @@ main() {
 
 colorize_images() {
 	mkdir -p "${IMAGE_DIR}"
-	while read ITEM_ID; do
+	while read -r ITEM_ID; do
 		IMAGE_URL="https://www.finna.fi/Cover/Show?id=${ITEM_ID}&index=0&size=large&source=Solr"
 
 		OUT="${BASE_DIR}/${IMAGE_DIR}/${ITEM_ID}.jpg"
 		echo "Colorizing and saving ${IMAGE_URL}"
 		bash "${BASE_DIR}/colorize.sh" "${IMAGE_URL}" "${OUT}"
-		echo "${ITEM_ID},${IMAGE_URL},todo,todo"
 	done < "${IDS_FILE}"
 }
 
@@ -40,7 +41,7 @@ create_metadata() {
 	echo "Collecting and writing metadata to ${METADATA_TSV}"
 
 	echo -e "id\ttitle\tfilename\toriginal_image_url\tlanding_page" > "${METADATA_TSV}"
-	while read ITEM_ID; do
+	while read -r ITEM_ID; do
 		echo "${ITEM_ID}"
 	
 		RESULT_TEMP="${TMP_DIR}/result_${ITEM_ID}.json"
@@ -68,7 +69,7 @@ create_gallery_md_content() {
 	echo ""
 	echo "[Click here for more information](README.md)"
 	echo ""
-	while read ITEM_ID; do
+	while read -r ITEM_ID; do
 		RESULT_TEMP="${TMP_DIR}/result_${ITEM_ID}.json"
 		curl -s -G \
 			--data-urlencode "id=${ITEM_ID}" \
@@ -121,7 +122,7 @@ get_ids() {
 		fi
 	done
 
-	echo done
+	echo 'done'
 }
 
 main
