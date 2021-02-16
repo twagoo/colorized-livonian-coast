@@ -79,6 +79,7 @@ create_gallery_md_content() {
 		TITLE="$(jq -r '.records|.[]|.title' < "${RESULT_TEMP}")"
 		FILE_NAME="${IMAGE_DIR}/${ITEM_ID}.jpg"
 		IMAGE_URL="https://www.finna.fi/Cover/Show?id=${ITEM_ID}&index=0&size=large&source=Solr"
+		IMAGE_URL_TIF="https://finna.fi/Cover/Download?id=${ITEM_ID}&index=0&size=original&format=tif"
 		LANDING_PAGE="https://finna.fi/Record/${ITEM_ID}?lng=en-gb"
 		
 		echo "----"
@@ -86,7 +87,7 @@ create_gallery_md_content() {
 		echo "![${TITLE}](${FILE_NAME})"
 		echo ""
 		echo "\"${TITLE}\""
-		echo "| [More information](${LANDING_PAGE}) | [black-and-white original]($IMAGE_URL)"
+		echo "| [More information](${LANDING_PAGE}) | black-and-white original: [[JPG]](${IMAGE_URL}) / [[highest quality TIF]](${IMAGE_URL_TIF})"
 		echo ""
 		echo "Photo by Vilho Setälä"
 		echo "| Published under a [CC BY 4.0 license](http://creativecommons.org/licenses/by/4.0/deed.en)"

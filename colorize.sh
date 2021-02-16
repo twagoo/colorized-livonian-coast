@@ -14,7 +14,7 @@ curl \
 
 URL="$(cat tmp.json|jq -r '.output_url')"
 
-if [ "${URL}" = "null" ] || ! [ -n "${URL}" ]; then
+if [ "${URL}" = "null" ] || [ -z "${URL}" ]; then
 	echo "Error: ${URL}"
 	cat tmp.json
 	rm tmp.json
